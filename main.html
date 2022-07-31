@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+    <h1 id="h1"></h1>
+
+<button onclick="myFunction2()">Sort Numerically</button>
+
+
+
+    <script>
+    var cars = ["Saab", "Volvo", "BMW", 1];
+    
+    // Change array Element ----------
+    // cars[0] = "Opel";
+
+    // Returns the number of elements ----------
+    // cars.length   
+ 
+    // Sorts the array ----------
+    // cars.sort()   
+
+    // Access first Array Element ----------
+    // cars = cars[0];
+   
+
+    // Access last Array element ----------
+    // cars = cars[cars.length - 1];
+    
+    // ARRAY LOOP - FOR ----------
+        // let value = ""
+        // for(i = 0; i < cars.length; i++){
+            // value += '<li>'+ cars[i]+'</li>'
+            // console.log(value)
+            // console.log(cars[i])
+        // }
+        // document.getElementById('h1').innerHTML = value
+    
+    // ARRAY LOOP - FOREACH ----------
+            // let value = ""
+            // cars.forEach(myFunction)
+            
+            // function myFunction(e){
+            //     value += '<li>' + e + '</li>'  
+            // }
+            // document.getElementById('h1').innerHTML = value
+
+//Convert Array to String ----------
+// cars.toString()
+
+// Specify the separator ----------
+// cars.join('-')
+
+// Remove the last element ----------
+// cars.pop()
+
+
+// Remove the first element ----------
+// cars.shift()
+
+// Add the last element ----------
+// cars.push()
+// fruits[fruits.length] = "";
+
+// Add the first element ----------
+// cars.unshift
+
+// Merging Two Arrays - concatenating ----------
+// var fruits = ["Banana", "Orange", "Apple", "Mango"]
+// var concat = cars.concat(fruits)
+// concat = cars.concat(fruits, fruits)
+// concat = cars.concat("Hello")           
+    // console.log(concat)
+
+// SPLICE() ----------
+// Adds new items to an array
+// adds new elements to an array, and returns an array with the deleted elements(if any)
+
+// let removeCars = cars.splice(0 , 0, "Lemon", "Kiwi")
+
+// Remove Element with splice
+    // cars.splice(0,1)
+    
+
+// SLICE() ----------
+    // sliceCars = cars.slice(2);
+
+// it selects array elements from the start argument, and up to(but not included) the end argument
+    // sliceCars = fruits.slice(1, 3)
+
+
+// SORT ARRAY ----------
+// Sort Alphabetically ----------
+    // cars.sort()
+    // cars.reverse()
+
+// Sort Numerically ----------
+const points = [40, 100, 1, 5, 25, 10];
+// function myFunction2() {
+//     points.sort(function (b, a) { return a - b });
+//     // Sorting descending
+//     // points.sort(function (a, b) { return b - a });
+
+//     document.getElementById("h1").innerHTML = points;
+//     console.log(points)
+// }
+
+// Sorting an Array in Random Order ----------
+    // points.sort(function (a, b) { return 0.2 - Math.random() });
+    // console.log(points)
+
+// Get the highest/Max Number ----------
+    // document.getElementById("h1").innerHTML = myArrayMax(points
+    // );
+    // function myArrayMax(arr) {
+    //     return Math.max.apply(null, arr);
+    // }
+
+// Get the Min/Lowest Number ----------
+    // document.getElementById("h1").innerHTML = myArrayMin(points);
+    // function myArrayMin(arr) {
+    //    return Math.min.apply(null, arr);
+    // }
+
+// Array forEach ----------
+// calls a function once for each array element
+    // let txt = "";
+    // points.forEach(myFunction);
+    // function myFunction(value) {txt += value + "<br>";}
+    // document.getElementById("h1").innerHTML = txt;
+
+// Array Map ----------
+// creates a new array by function on each array element
+    // const numbers1 = [45, 4, 9, 16, 25];
+    // const numbers2 = numbers1.map(myFunction);
+
+    // function myFunction(value) {return value * 2;}
+
+// Array filter ----------
+    const numbers = [45, 4, 9, 16, 25];
+    // const over18 = numbers.filter(myFunction);
+
+    // function myFunction(value) {return value > 18 && value < 30;}
+    // document.getElementById("h1").innerHTML = over18;
+
+// Array Reduce
+
+
+    const companies = [
+{ name: "Company One", category: "Finance", start: 1981, end: 2004 },
+{ name: "Company Two", category: "Retail", start: 1992, end: 2008 },
+{ name: "Company Three", category: "Auto", start: 1999, end: 2007 },
+{ name: "Company Four", category: "Retail", start: 1989, end: 2010 },
+{ name: "Company Five", category: "Technology", start: 2009, end: 2014 },
+{ name: "Company Six", category: "Finance", start: 1987, end: 2010 },
+{ name: "Company Seven", category: "Auto", start: 1986, end: 1996 },
+{ name: "Company Eight", category: "Technology", start: 2011, end: 2016 },
+{ name: "Company Nine", category: "Retail", start: 1981, end: 1989 }
+    ];
+
+    const ages = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32, 2];
+// forEach ------------------------------------------------
+// for(i = 0; i < companies.length; i++){
+//     console.log(companies[i])
+// }
+// let legalAge = ages.filter(age => age > 18 && age < 50)
+    
+// console.log(legalAge)
+
+// companies.forEach(function(myFunction){
+//     console.log(myFunction.name)
+// })
+
+
+
+// Display companies Detail ----------
+//     let value = ""
+//     companies.forEach(function (company) {
+//         value += '<li>' + company.name + ", " + company.category + ", " + company.start + "-" + company.end + '</li>'
+//         console.log(company)})
+//     document.getElementById('h1').innerHTML = value
+
+
+    // DISPLAY COMPANIES ----------
+    // let companiesNames = ""
+    // companies.forEach(function(company){
+    //     companiesNames += 
+    //     '<li>' +company.name+ "," + company.category + ", " + company.start + " - " + company.end + '</li>'     })
+    // document.getElementById('h1').innerHTML = companiesNames
+
+
+// Filter --------------------------------------------------------
+
+// GET 18 AND OLDER ----------
+//     let canDrink = []
+//     for(let i = 0; i < ages.length; i++){
+//         if(ages[i] >= 18){
+//             canDrink.push(ages[i])
+//         }
+//     }
+
+        //Shorter Version ----------
+    // let canDrink = ages.filter(function(age){
+    //     if(age <= 18)
+    //     return true
+    // })
+
+        //Shortest Version ----------
+    // let canDrink = ages.filter(age => age >= 18)
+    // console.log(canDrink)
+
+
+// FILTER RETAIL COMPANIES ----------
+// let retailCompanies = companies.filter(function(company){
+//     if(company.category === 'Retail')
+//     return true   })
+
+//Shortest Version ----------
+    // let retailCompanies = companies.filter(company => company.category === 'Retail')
+    //     console.log(retailCompanies)
+
+// Companies start 80's  ----------
+    // let companiesIn80s = companies.filter(eighties => (eighties.start >= 1980 && eighties.start <= 1989))
+    // console.log(companiesIn80s)
+
+// Companies laster for 10 yrs  ----------
+    // let lastedTenYrs = companies.filter(company => ((company.end - company.start) >= 10))
+    // console.log(lastedTenYrs)
+
+// MAP ---------------------------------------------------
+
+// CREATE ARRAY OF COMPANY NAMES ----------
+    // let companyName = companies.map(company => company.name)
+    // console.log(companyName)
+
+// CREATE NEW ARRAY WITH FORMAT ----------
+    // let companyName = companies.map(company => `${company.name} [${company.start} - ${company.end}]`)
+    // console.log(companyName)
+
+// CREATE ARRAY AGES SQUAREROOT ----------
+//     let agesSquareRoot = ages.map(age => Math.sqrt(age))
+// console.log(agesSquareRoot)
+
+// CREATE ARRAY AGES SQUARED ----------
+    // let agesSquared = ages.map(age => Math.pow(age, 2))
+    // console.log(agesSquared)
+
+// COMBINE USING MAP - add the multiply ----------
+    // let agesTotal = ages
+    // .map(age => age - 10)
+    // .map(age => age*2)
+    // console.log(agesTotal)
+
+// SORT -----------------------------------------------------
+
+// SORT COMPANY BY START YR - for array-object
+    // let sortCompanyStart = companies.sort((a,b) => a.start - b.start)
+    // console.log(sortCompanyStart)
+
+// SORT AGES - for array
+    // let sortAge = ages.sort((a,b) => a - b)
+    // console.log(sortAge)
+
+// REDUCE -------------------------------------------------
+
+//SUM OF ALL AGES ----------
+    // let totalAges = ages.reduce(myFunction);
+    // document.getElementById("h1").innerHTML = "The sum is " + totalAges;
+    // function myFunction(total, value) {
+    //     return total + value;}
+
+//SUM OF ALL AGES Shorter Version ----------
+    // let totalAges = ages.reduce((total, value) => total + value)
+    // document.getElementById("h1").innerHTML = "The sum is " + totalAges;
+
+
+// TOTAL YRS OF COMPANIES - ADD "0" WHEN USING NESTED ARRAY-OBJECT
+    // let totalYears = companies.reduce((total, company) => total + (company.end - company.start),0)
+    // document.getElementById("h1").innerHTML = "The sum is " + totalYears;
+
+// multiple age by 2
+// filter out age 40 below
+// sort age
+// add all age
+
+// let combine = ages
+// .map(age => age*2)
+// .filter(age => age >= 40)
+// .sort((a,b) => a - b)
+// .reduce((a, b) => a + b)
+
+// console.log(combine)
+
+
+
+
+
+    </script>
+</body>
+</html>
